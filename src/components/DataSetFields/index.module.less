@@ -1,0 +1,61 @@
+.dsField {
+  padding: 6px 20px;
+}
+
+.active {
+  background: cornflowerblue;
+  color: #fff;
+}
+
+.dataSetFields {
+  overflow: hidden;
+  overflow-y: auto;
+  height: calc(100vh - 300px);
+}
+
+.dsFieldWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .addIcon {
+    display: none;
+
+    svg {
+      margin-left: 8px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.iconActive {
+      display: flex;
+    }
+  }
+}
+
+:global {
+  .datasetModal {
+    .reportDetail {
+      .reportDetailItem {
+        padding: 5px 8px;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .actions {
+        .actionBtn {
+          margin-right: 6px;
+          color: rgb(111, 148, 230);
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

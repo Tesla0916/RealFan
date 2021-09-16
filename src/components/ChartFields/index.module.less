@@ -1,0 +1,33 @@
+.chartPicker {
+  padding: 20px;
+}
+
+.chartImg {
+  padding: 4px;
+  margin-bottom: 4px;
+
+  .fieldItemWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+:global {
+  .deleteIcon {
+    display: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.deleteIconActive {
+      display: flex;
+    }
+  }
+}
+
+.active {
+  color: #fff;
+  background: cornflowerblue;
+}

@@ -1,0 +1,21 @@
+.reportEditor {
+  padding: 20px;
+  overflow: hidden;
+  overflow-y: auto;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chart {
+  border: 1px solid #ddd;
+  width: 200px;
+  height: 200px;
+  margin: 0 8px 8px 0;
+  padding: 8px;
+}
+
+.active {
+  background: cornflowerblue;
+  color: #fff;
+}

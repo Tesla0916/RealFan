@@ -1,0 +1,51 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.headerBar {
+  width: 100vw;
+  height: 50px;
+  background-color: cadetblue;
+}
+
+.reportBar {
+  width: 100vw;
+  height: 50px;
+}
+
+.main {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  display: flex;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.dataSet {
+  min-width: 180px;
+  border-right: 1px solid #ddd;
+}
+
+.dsPicker {
+  height: 200px;
+  border-bottom: 1px solid #ddd;
+}
+
+.chartArea {
+  min-width: 210px;
+  border-right: 1px solid #ddd;
+}
+
+.chartPicker {
+  height: 200px;
+  border-bottom: 1px solid #ddd;
+}
+
+.chartFields {
+  height: calc(100% - 200px);
+  overflow-y: auto;
+}

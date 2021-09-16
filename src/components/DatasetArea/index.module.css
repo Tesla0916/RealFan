@@ -1,0 +1,18 @@
+.datasetArea {
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.dataSetItem {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background: cornflowerblue;
+}

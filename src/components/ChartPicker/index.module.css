@@ -1,0 +1,13 @@
+.chartPicker {
+  padding: 20px;
+}
+
+.chartImg {
+  padding: 4px;
+  margin-bottom: 4px;
+}
+
+.active {
+  color: #fff;
+  background: cornflowerblue;
+}

@@ -1,0 +1,65 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi generate tmp",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage",
+    "lint": "eslint src/ ",
+    "stylelint": "npx stylelint ./src"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run stylelint && npm run test;"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@aloudata/recoil-normalize-orm": "0.1.0-beta.1",
+    "@ant-design/icons": "^4.6.2",
+    "@ant-design/pro-layout": "^6.5.0",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@umijs/preset-react": "^1.8.10",
+    "antd": "^4.16.1",
+    "axios": "^0.21.1",
+    "classnames": "^2.3.1",
+    "eslint": "^7.27.0",
+    "lodash": "^4.17.21",
+    "react": "17.x",
+    "react-dom": "17.x",
+    "recoil": "^0.3.1",
+    "recoilize": "^2.0.1",
+    "umi": "^3.4.23"
+  },
+  "devDependencies": {
+    "@aloudata/eslint-config-base": "0.0.1",
+    "@testing-library/react-hooks": "^7.0.0",
+    "@types/lodash": "^4.14.170",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/recoilize": "^0.8.0",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@umijs/test": "^3.4.23",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^3.0.9",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "typescript": "^4.1.2",
+    "yorkie": "^2.0.0"
+  }
+}
